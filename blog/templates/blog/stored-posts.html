@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Stored posts
+{% endblock title %}
+{% block static_files %}<link rel="stylesheet" href="{% static 'blog/stored-posts.css' %}">{% endblock static_files%}
+{% block content %}
+
+
+{% if has_posts %}
+<ul class="post-container">
+
+{% for post in posts %}
+    <div class="post-card"> 
+    <a href="{% url 'post-detail-page' post.slug %}"><li>{{post}}</li> </a>
+    </div>
+{% endfor %}
+</ul>
+
+
+{% else %}
+<div class="no-items">
+    <h2>You have not added any post in this list!!</h2>    
+</div> 
+
+{% endif %}
+{% endblock content %}

@@ -1,0 +1,36 @@
+
+  .post a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .post a:hover {
+    background: linear-gradient(to right top, #6305dd, #390281);
+    color: white;
+  }
+
+  .post__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .post__content p {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .post img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 4rem;
+  }
+
+  
